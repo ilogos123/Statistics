@@ -42,3 +42,8 @@ def median(data):
 def mean(data):
     """均值"""
     return sum(data) / len(data)
+
+
+def rng(data):
+    """极差"""
+    return max(data) - min(data)
