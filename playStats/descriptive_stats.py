@@ -26,3 +26,14 @@ def mode(data):
         else:
             break
     return ret, count
+
+
+def median(data):
+    """中位数"""
+    sorted_data = sorted(data)
+    n = len(sorted_data)
+
+    if n % 2 == 1:
+        return sorted_data[n // 2]
+
+    return (sorted_data[n // 2 - 1] + sorted_data[n // 2]) / 2
