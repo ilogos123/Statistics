@@ -6,6 +6,7 @@ from playStats.descriptive_stats import mean
 from playStats.descriptive_stats import rng
 from playStats.descriptive_stats import quartile
 from playStats.descriptive_stats import variance
+from playStats.descriptive_stats import std
 
 if __name__ == '__main__':
     data = [2, 2, 2, 1, 1, 1, 3, 3]
@@ -30,6 +31,9 @@ if __name__ == '__main__':
 
     # 测试方差
     print(variance(data))
+
+    # 测试标准差
+    print(std(data))
 
 
 

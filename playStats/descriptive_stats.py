@@ -1,4 +1,5 @@
 from collections import Counter
+from math import sqrt
 
 
 def frequency(data):
@@ -80,3 +81,8 @@ def variance(data):
     #   全部样本，方差除以n
     #   部分样本，方差除以n-1
     return sum((e - mean_value) ** 2 for e in data) / (n - 1)
+
+
+def std(data):
+    """标准差"""
+    return sqrt(variance(data))
