@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import random
+from collections import Counter
 
 if __name__ == '__main__':
-
     # scatter plot
     # random.seed(666)
     # x = [random.randint(0, 100) for _ in range(100)]
@@ -12,9 +12,14 @@ if __name__ == '__main__':
     # plt.show()
 
     # line plot
-    x = [random.randint(0, 100) for _ in range(100)]
-    plt.plot([i for i in range(100)], x)
+    # x = [random.randint(0, 100) for _ in range(100)]
+    # plt.plot([i for i in range(100)], x)
+    # plt.show()
+
+    # bar plot
+    data = [3, 3, 4, 1, 5, 4, 2, 1, 5, 4, 4, 4, 5, 3, 2, 1, 4, 5, 5]
+    counter = Counter(data)
+    x = [point[0] for point in counter.most_common()]
+    y = [point[1] for point in counter.most_common()]
+    plt.bar(x, y)
     plt.show()
-
-
-
