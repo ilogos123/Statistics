@@ -4,6 +4,7 @@ from playStats.descriptive_stats import mode
 from playStats.descriptive_stats import median
 from playStats.descriptive_stats import mean
 from playStats.descriptive_stats import rng
+from playStats.descriptive_stats import quartile
 
 if __name__ == '__main__':
     data = [2, 2, 2, 1, 1, 1, 3, 3]
@@ -22,6 +23,9 @@ if __name__ == '__main__':
 
     # 测试极差
     print(rng(data))
+
+    # 测试四分位数
+    print(quartile(data))
 
 
 
