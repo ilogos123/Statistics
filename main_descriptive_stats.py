@@ -5,6 +5,7 @@ from playStats.descriptive_stats import median
 from playStats.descriptive_stats import mean
 from playStats.descriptive_stats import rng
 from playStats.descriptive_stats import quartile
+from playStats.descriptive_stats import variance
 
 if __name__ == '__main__':
     data = [2, 2, 2, 1, 1, 1, 3, 3]
@@ -26,6 +27,9 @@ if __name__ == '__main__':
 
     # 测试四分位数
     print(quartile(data))
+
+    # 测试方差
+    print(variance(data))
 
 
 
